@@ -1,0 +1,22 @@
+{
+  "run_id": "nepal_unet_eval_20261003",
+  "timestamp": "2026-10-03 16:29:12",
+  "model_name": "Small U-Net",
+  "checkpoint_path": "experiments/unet/best_model.pt",
+  "input_raster_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\data\\processed\\unet_inputs\\post_calibrated_sigma0_unet_3band_corrected.tif",
+  "total_pixels": 690157368,
+  "valid_pixels": 379266320,
+  "nodata_pixels": 310891048,
+  "valid_percentage": 54.9536,
+  "predicted_water_pixels": 32309359,
+  "water_percentage_of_valid": 8.5189,
+  "mean_water_probability": 0.0904,
+  "std_water_probability": 0.2447,
+  "min_water_probability": 0.0,
+  "max_water_probability": 1.0,
+  "runtime_seconds": 606.82,
+  "device": "cuda",
+  "python_version": "3.13.5",
+  "torch_version": "2.6.0+cu124",
+  "disclaimer": "Preliminary SAR-based water prediction \u2014 independent confirmation required. Model outputs represent preliminary probabilistic SAR water extent. Must NOT be used solely to claim road closures, settlement access limitations, or area safety."
+}

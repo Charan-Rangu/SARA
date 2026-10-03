@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-04T00:19:00+05:30",
+  "quarantine_dir": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\quarantine_cleanup_backup_20261004",
+  "quarantined_files": [],
+  "removed_files": [],
+  "removed_dirs": [
+    "scratch/clean_extract_audit",
+    ".pytest_cache",
+    "backend/services/__pycache__",
+    "backend/__pycache__",
+    "geospatial/__pycache__",
+    "ml/__pycache__",
+    "scratch/__pycache__",
+    "scripts/__pycache__",
+    "tests/__pycache__",
+    "validation/__pycache__"
+  ],
+  "retained_protected_assets": [
+    "experiments/unet/best_model.pt",
+    "dist/SARA_competition_submission.zip",
+    "submission_package/",
+    "data/raw/",
+    "data/processed/",
+    "data/output/",
+    "backend/",
+    "geospatial/",
+    "ml/",
+    "validation/",
+    "tests/",
+    "config/",
+    "docs/"
+  ]
+}

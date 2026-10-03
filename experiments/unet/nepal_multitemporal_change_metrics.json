@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-10-03 16:57:17",
+  "total_scene_pixels": 690157368,
+  "total_valid_pixels": 379266320,
+  "baseline_small_unet_water_pixels": 32309359,
+  "baseline_small_unet_water_percentage": 8.5189,
+  "backscatter_change_pixels_le_minus_3db": 54192435,
+  "backscatter_change_percentage": 14.2888,
+  "overlap_baseline_water_and_change": 7604711,
+  "overlap_baseline_water_and_change_percentage_of_water": 23.5372,
+  "overlap_candidate_c15_and_change": 3326431,
+  "overlap_candidate_c10_and_change": 2729518,
+  "overlap_candidate_c5_and_change": 1970639,
+  "agreement_layer_categories": {
+    "0_land": 300369237,
+    "1_persistent_water_candidate": 8823064,
+    "2_backscatter_change_only": 46587724,
+    "3_agreed_inundation_candidate": 3326431,
+    "4_steep_slope_radar_shadow_candidate": 20159864,
+    "255_nodata": 310891048
+  },
+  "runtime_seconds": 22.72
+}

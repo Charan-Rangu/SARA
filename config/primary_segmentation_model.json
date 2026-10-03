@@ -1,0 +1,80 @@
+{
+  "model_name": "Small U-Net",
+  "model_role": "Primary Deep-Learning Preliminary Flood Segmentation Model",
+  "architecture": {
+    "class_name": "SmallUNet",
+    "init_features": 32,
+    "total_trainable_parameters": 1927009,
+    "framework": "PyTorch 2.6.0+cu124",
+    "checkpoint_path": "experiments/unet/best_model.pt"
+  },
+  "input_specification": {
+    "num_channels": 3,
+    "channels": [
+      "VV_dB",
+      "VH_dB",
+      "VV_dB - VH_dB"
+    ],
+    "input_spatial_dimensions": [256, 256],
+    "normalization": {
+      "channel_means": [-11.0, -18.0, 7.0],
+      "channel_stds": [3.0, 3.5, 2.5],
+      "method": "Channel-wise Z-score normalization"
+    }
+  },
+  "inference_parameters": {
+    "probability_threshold": 0.50,
+    "output_shape": [1, 256, 256],
+    "output_data_type": "uint8 (0=land, 1=water, 255=nodata)",
+    "nodata_value": 255
+  },
+  "manifests": {
+    "training_manifest_path": "data/ml/train_manifest.json",
+    "validation_manifest_path": "data/ml/val_manifest.json",
+    "test_manifest_path": "data/ml/test_manifest.json"
+  },
+  "training_configuration": {
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "loss_function": "MaskedBCEDiceLoss (50% BCE + 50% Dice with nodata 255 masking)",
+    "use_mixed_precision": true,
+    "fixed_random_seed": 42,
+    "max_epochs": 30,
+    "completed_epochs": 30,
+    "best_epoch": 24,
+    "early_stopping_patience": 8,
+    "checkpoint_selection_metric": "val_iou"
+  },
+  "somalia_validation_results": {
+    "note": "Reported Somalia metrics represent validation results on the Sen1Floods11 benchmark split and DO NOT represent Nepal event accuracy.",
+    "evaluation_partition": "Somalia validation tiles (4 tiles: Somalia_028, Somalia_029, Somalia_030, Somalia_031)",
+    "total_valid_pixels": 260096,
+    "water_pixels": 3001,
+    "confusion_matrix": {
+      "true_positives": 2838,
+      "false_positives": 260,
+      "false_negatives": 163,
+      "true_negatives": 256835
+    },
+    "water_metrics": {
+      "precision": 0.916075,
+      "recall": 0.945685,
+      "f1_dice": 0.930644,
+      "iou": 0.870285
+    }
+  },
+  "metric_provenance_and_scientific_safeguards": {
+    "provenance": "Evaluated and verified during Experiment 4 (sara_unet_independent_audit.md).",
+    "safeguards": [
+      "SAR change detection and model predictions represent preliminary probabilistic evidence, not definitive proof of ground flooding or structural damage.",
+      "Model outputs must not be used solely to claim road closures, settlement access limitations, or area safety status without ground verification.",
+      "Somalia validation metrics reflect performance on Sen1Floods11 validation tiles and must not be cited as Nepal operational accuracy.",
+      "EMSR927 activation data and Nepal event masks were kept strictly isolated from training, tuning, and checkpoint selection."
+    ],
+    "attributions": "Sentinel-1 data: © Copernicus Sentinel Data (2024). OpenStreetMap data: © OpenStreetMap contributors."
+  },
+  "disclaimer": "SARA Small U-Net model configuration. Primary deep learning preliminary water segmentation model."
+}

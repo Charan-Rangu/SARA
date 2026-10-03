@@ -1,0 +1,82 @@
+{
+  "timestamp": "2026-10-03 16:42:54",
+  "total_scene_pixels": 690157368,
+  "total_valid_pixels_audited": 379266320,
+  "total_predicted_water_pixels": 32309359,
+  "overall_predicted_water_percentage": 8.5189,
+  "steep_terrain_water_pixels_gt_15deg": 20159865,
+  "steep_terrain_water_proportion_of_total_water": 62.3964,
+  "slope_category_breakdown": [
+    {
+      "slope_category": "Flat (0-2 deg)",
+      "slope_range_deg": [
+        0.0,
+        2.0
+      ],
+      "valid_pixels": 29988409,
+      "predicted_water_pixels": 5067233,
+      "water_percentage_in_category": 16.8973,
+      "proportion_of_total_predicted_water": 15.6835,
+      "mean_water_probability": 0.1719,
+      "mean_vv_db": -15.0,
+      "mean_vh_db": -26.33
+    },
+    {
+      "slope_category": "Gentle (2-5 deg)",
+      "slope_range_deg": [
+        2.0,
+        5.0
+      ],
+      "valid_pixels": 24034856,
+      "predicted_water_pixels": 2153169,
+      "water_percentage_in_category": 8.9585,
+      "proportion_of_total_predicted_water": 6.6642,
+      "mean_water_probability": 0.0919,
+      "mean_vv_db": -13.05,
+      "mean_vh_db": -23.7
+    },
+    {
+      "slope_category": "Moderate (5-15 deg)",
+      "slope_range_deg": [
+        5.0,
+        15.0
+      ],
+      "valid_pixels": 81537549,
+      "predicted_water_pixels": 4929092,
+      "water_percentage_in_category": 6.0452,
+      "proportion_of_total_predicted_water": 15.2559,
+      "mean_water_probability": 0.0621,
+      "mean_vv_db": -11.37,
+      "mean_vh_db": -21.08
+    },
+    {
+      "slope_category": "Steep (15-25 deg)",
+      "slope_range_deg": [
+        15.0,
+        25.0
+      ],
+      "valid_pixels": 86566411,
+      "predicted_water_pixels": 4941790,
+      "water_percentage_in_category": 5.7087,
+      "proportion_of_total_predicted_water": 15.2952,
+      "mean_water_probability": 0.0601,
+      "mean_vv_db": -9.26,
+      "mean_vh_db": -17.78
+    },
+    {
+      "slope_category": "Very Steep (>25 deg)",
+      "slope_range_deg": [
+        25.0,
+        90.0
+      ],
+      "valid_pixels": 157139095,
+      "predicted_water_pixels": 15218075,
+      "water_percentage_in_category": 9.6845,
+      "proportion_of_total_predicted_water": 47.1011,
+      "mean_water_probability": 0.1059,
+      "mean_vv_db": -7.63,
+      "mean_vh_db": -15.25
+    }
+  ],
+  "runtime_seconds": 198.19
+}

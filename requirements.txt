@@ -1,0 +1,10 @@
+# SARA Master Requirements File
+# Installs all core, geospatial, and machine learning dependencies
+
+-r requirements-core.txt
+-r requirements-geo.txt
+-r requirements-ml.txt
+
+# Additional dependencies
+Pillow>=10.0.0
+pydantic>=2.0.0

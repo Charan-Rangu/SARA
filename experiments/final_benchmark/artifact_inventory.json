@@ -1,0 +1,53 @@
+{
+  "dataset_splits": {
+    "train": {
+      "events": [
+        "Bolivia",
+        "Ghana",
+        "India",
+        "Nigeria",
+        "Pakistan",
+        "Paraguay",
+        "Spain",
+        "SriLanka",
+        "USA"
+      ],
+      "num_tiles": 36
+    },
+    "val": {
+      "events": [
+        "Somalia"
+      ],
+      "num_tiles": 4
+    },
+    "test": {
+      "events": [
+        "Mekong"
+      ],
+      "num_tiles": 4
+    }
+  },
+  "artifact_inventory": {
+    "random_forest": {
+      "path": "experiments/rf_baseline/rf_baseline_model.joblib",
+      "size_bytes": 1074921,
+      "type": "sklearn RandomForestClassifier"
+    },
+    "xgboost": {
+      "path": "experiments/xgboost_baseline/xgb_baseline_model.json",
+      "size_bytes": 210688,
+      "type": "XGBoost Booster JSON"
+    },
+    "stacking_ensemble": {
+      "path": "experiments/stacking/stacking_model.joblib",
+      "size_bytes": 1250118,
+      "type": "Complete Stacking Package (RF + XGB + LR Meta-Model)"
+    },
+    "small_unet": {
+      "path": "experiments/unet/best_model.pt",
+      "size_bytes": 23212754,
+      "type": "PyTorch State Dict (FP16 AMP)"
+    }
+  },
+  "isolation_verified": true
+}

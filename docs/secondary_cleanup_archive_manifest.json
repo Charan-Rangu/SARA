@@ -1,0 +1,81 @@
+{
+  "timestamp": "2026-10-04T00:37:11.257486",
+  "archive_destination": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004",
+  "total_files_archived": 1029,
+  "total_bytes_archived": 12598652570,
+  "total_gb_archived": 11.733409548178315,
+  "verified_hash_matches": 1029,
+  "mismatches": 0,
+  "sample_entries": [
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.dim",
+      "relative_path": "target.dim",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.dim",
+      "size_bytes": 7843446,
+      "sha256": "6d0637b6b04cc7219c1c13efc478c0ca8ff6485c74b231b9b54c33247bd245f2"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\Amplitude_VH.hdr",
+      "relative_path": "target.data/Amplitude_VH.hdr",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\Amplitude_VH.hdr",
+      "size_bytes": 715,
+      "sha256": "1ac4a94316d101f65bf02a877f91ace265ef35c9b36b8e2072bf564acc56e215"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\Amplitude_VH.img",
+      "relative_path": "target.data/Amplitude_VH.img",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\Amplitude_VH.img",
+      "size_bytes": 2760629472,
+      "sha256": "b316ba406e5a7ef2c795cc4b01437d406d7ccfadc9500474f2ae4c09120804c2"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\Amplitude_VV.hdr",
+      "relative_path": "target.data/Amplitude_VV.hdr",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\Amplitude_VV.hdr",
+      "size_bytes": 715,
+      "sha256": "73d071f9196c57d6bce728dc4aaea71ee622dc1ca1372a8ec07562b4e4a544fc"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\Amplitude_VV.img",
+      "relative_path": "target.data/Amplitude_VV.img",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\Amplitude_VV.img",
+      "size_bytes": 2760629472,
+      "sha256": "7232a1044c6e1a7f91e88c854252e3e165f537a666eb3cd2012898482159c6f7"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\vector_data\\ground_control_points.csv",
+      "relative_path": "target.data/vector_data/ground_control_points.csv",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\vector_data\\ground_control_points.csv",
+      "size_bytes": 209,
+      "sha256": "9dc61053b7ad494fe269e1704a1820a5255639fab4670d1694b7a9a9c854a8e5"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\target.data\\vector_data\\pins.csv",
+      "relative_path": "target.data/vector_data/pins.csv",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\target.data\\vector_data\\pins.csv",
+      "size_bytes": 225,
+      "sha256": "6792d3166487f08ab4f89b616fae40bcaef99f0e852e95b898460e9ff2d68aac"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\data\\output\\run_custom_20261003_194525_aeb6d5\\predicted_water_mask.tif",
+      "relative_path": "data/output/run_custom_20261003_194525_aeb6d5/predicted_water_mask.tif",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\data\\output\\run_custom_20261003_194525_aeb6d5\\predicted_water_mask.tif",
+      "size_bytes": 16918,
+      "sha256": "ebd3b9db443c2ca8089f6e3f2cd47c76bd10babb2b804ed493480c12bd43b141"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\data\\output\\run_custom_20261003_194525_aeb6d5\\water_prediction_overlay.png",
+      "relative_path": "data/output/run_custom_20261003_194525_aeb6d5/water_prediction_overlay.png",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\data\\output\\run_custom_20261003_194525_aeb6d5\\water_prediction_overlay.png",
+      "size_bytes": 2838,
+      "sha256": "382914efb6878c2208f8afacba8ef9382d03fbc6cfa394a4f2a46bb9f5d3db90"
+    },
+    {
+      "original_path": "C:\\Users\\chara\\OneDrive\\Documents\\Multimodal AI\\sara\\data\\output\\run_custom_20261003_194525_aeb6d5\\water_probability_map.tif",
+      "relative_path": "data/output/run_custom_20261003_194525_aeb6d5/water_probability_map.tif",
+      "archive_path": "C:\\Users\\chara\\AppData\\Local\\Temp\\sara_secondary_cleanup_archive_20261004\\data\\output\\run_custom_20261003_194525_aeb6d5\\water_probability_map.tif",
+      "size_bytes": 66070,
+      "sha256": "86d76d2d1cde9e86e4dcdf56ff22b2baa867a14568a8b559233d06f2faf151f2"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "benchmark_summary": {
+    "evaluation_date": "2026-10-03",
+    "decision_threshold": 0.5,
+    "somalia_val_tiles": 4,
+    "mekong_test_tiles": 4,
+    "somalia_valid_pixels": 260096,
+    "mekong_valid_pixels": 260096
+  },
+  "somalia_validation": {
+    "rf": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 3001,
+          "FP": 1,
+          "FN": 0,
+          "TN": 257094
+        },
+        "water_metrics": {
+          "precision": 0.9996668887408394,
+          "recall": 1.0,
+          "f1_dice": 0.9998334166250208,
+          "iou": 0.9996668887408394
+        },
+        "eval_duration_seconds": 0.2859499454498291
+      },
+      "per_tile": {
+        "Somalia_028": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64250,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        },
+        "Somalia_029": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 1,
+          "FN": 0,
+          "TN": 64249,
+          "precision": 0.9987096774193548,
+          "recall": 1.0,
+          "f1_dice": 0.9993544222078761,
+          "iou": 0.9987096774193548
+        },
+        "Somalia_030": {
+          "valid_pixels": 65024,
+          "TP": 712,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64312,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        },
+        "Somalia_031": {
+          "valid_pixels": 65024,
+          "TP": 741,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64283,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        }
+      }
+    },
+    "xgb": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2997,
+          "FP": 88,
+          "FN": 4,
+          "TN": 257007
+        },
+        "water_metrics": {
+          "precision": 0.9714748784440843,
+          "recall": 0.9986671109630123,
+          "f1_dice": 0.9848833388103845,
+          "iou": 0.9702168986727097
+        },
+        "eval_duration_seconds": 0.11757802963256836
+      },
+      "per_tile": {
+        "Somalia_028": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 28,
+          "FN": 0,
+          "TN": 64222,
+          "precision": 0.9650872817955112,
+          "recall": 1.0,
+          "f1_dice": 0.9822335025380711,
+          "iou": 0.9650872817955112
+        },
+        "Somalia_029": {
+          "valid_pixels": 65024,
+          "TP": 773,
+          "FP": 22,
+          "FN": 1,
+          "TN": 64228,
+          "precision": 0.9723270440251572,
+          "recall": 0.9987080103359173,
+          "f1_dice": 0.9853409815168898,
+          "iou": 0.9711055276381909
+        },
+        "Somalia_030": {
+          "valid_pixels": 65024,
+          "TP": 709,
+          "FP": 15,
+          "FN": 3,
+          "TN": 64297,
+          "precision": 0.9792817679558011,
+          "recall": 0.9957865168539326,
+          "f1_dice": 0.9874651810584958,
+          "iou": 0.9752407152682255
+        },
+        "Somalia_031": {
+          "valid_pixels": 65024,
+          "TP": 741,
+          "FP": 23,
+          "FN": 0,
+          "TN": 64260,
+          "precision": 0.9698952879581152,
+          "recall": 1.0,
+          "f1_dice": 0.9847176079734219,
+          "iou": 0.9698952879581152
+        }
+      }
+    },
+    "stacking": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 3001,
+          "FP": 9,
+          "FN": 0,
+          "TN": 257086
+        },
+        "water_metrics": {
+          "precision": 0.9970099667774086,
+          "recall": 1.0,
+          "f1_dice": 0.9985027449675594,
+          "iou": 0.9970099667774086
+        },
+        "eval_duration_seconds": 0.3381633758544922
+      },
+      "per_tile": {
+        "Somalia_028": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 3,
+          "FN": 0,
+          "TN": 64247,
+          "precision": 0.9961389961389961,
+          "recall": 1.0,
+          "f1_dice": 0.9980657640232108,
+          "iou": 0.9961389961389961
+        },
+        "Somalia_029": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 4,
+          "FN": 0,
+          "TN": 64246,
+          "precision": 0.9948586118251928,
+          "recall": 1.0,
+          "f1_dice": 0.9974226804123711,
+          "iou": 0.9948586118251928
+        },
+        "Somalia_030": {
+          "valid_pixels": 65024,
+          "TP": 712,
+          "FP": 2,
+          "FN": 0,
+          "TN": 64310,
+          "precision": 0.9971988795518207,
+          "recall": 1.0,
+          "f1_dice": 0.9985974754558204,
+          "iou": 0.9971988795518207
+        },
+        "Somalia_031": {
+          "valid_pixels": 65024,
+          "TP": 741,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64283,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        }
+      }
+    },
+    "unet": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2838,
+          "FP": 260,
+          "FN": 163,
+          "TN": 256835
+        },
+        "water_metrics": {
+          "precision": 0.9160748870238864,
+          "recall": 0.9456847717427525,
+          "f1_dice": 0.9306443679291688,
+          "iou": 0.8702851885924563
+        },
+        "eval_duration_seconds": 0.642052412033081
+      },
+      "per_tile": {
+        "Somalia_028": {
+          "valid_pixels": 65024,
+          "TP": 739,
+          "FP": 60,
+          "FN": 35,
+          "TN": 64190,
+          "precision": 0.9249061326658323,
+          "recall": 0.9547803617571059,
+          "f1_dice": 0.9396058486967578,
+          "iou": 0.8860911270983214
+        },
+        "Somalia_029": {
+          "valid_pixels": 65024,
+          "TP": 727,
+          "FP": 70,
+          "FN": 47,
+          "TN": 64180,
+          "precision": 0.9121706398996235,
+          "recall": 0.9392764857881137,
+          "f1_dice": 0.9255251432208784,
+          "iou": 0.8613744075829384
+        },
+        "Somalia_030": {
+          "valid_pixels": 65024,
+          "TP": 679,
+          "FP": 63,
+          "FN": 33,
+          "TN": 64249,
+          "precision": 0.9150943396226415,
+          "recall": 0.9536516853932584,
+          "f1_dice": 0.9339752407152683,
+          "iou": 0.8761290322580645
+        },
+        "Somalia_031": {
+          "valid_pixels": 65024,
+          "TP": 693,
+          "FP": 67,
+          "FN": 48,
+          "TN": 64216,
+          "precision": 0.9118421052631579,
+          "recall": 0.9352226720647774,
+          "f1_dice": 0.9233844103930712,
+          "iou": 0.8576732673267327
+        }
+      }
+    }
+  },
+  "mekong_test": {
+    "rf": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2974,
+          "FP": 1,
+          "FN": 0,
+          "TN": 257121
+        },
+        "water_metrics": {
+          "precision": 0.9996638655462184,
+          "recall": 1.0,
+          "f1_dice": 0.9998319045217683,
+          "iou": 0.9996638655462184
+        },
+        "eval_duration_seconds": 0.22382760047912598
+      },
+      "per_tile": {
+        "Mekong_012": {
+          "valid_pixels": 65024,
+          "TP": 775,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64249,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        },
+        "Mekong_013": {
+          "valid_pixels": 65024,
+          "TP": 763,
+          "FP": 1,
+          "FN": 0,
+          "TN": 64260,
+          "precision": 0.9986910994764397,
+          "recall": 1.0,
+          "f1_dice": 0.9993451211525868,
+          "iou": 0.9986910994764397
+        },
+        "Mekong_014": {
+          "valid_pixels": 65024,
+          "TP": 755,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64269,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        },
+        "Mekong_015": {
+          "valid_pixels": 65024,
+          "TP": 681,
+          "FP": 0,
+          "FN": 0,
+          "TN": 64343,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1_dice": 1.0,
+          "iou": 1.0
+        }
+      }
+    },
+    "xgb": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2971,
+          "FP": 96,
+          "FN": 3,
+          "TN": 257026
+        },
+        "water_metrics": {
+          "precision": 0.9686990544506032,
+          "recall": 0.9989912575655683,
+          "f1_dice": 0.9836119847707334,
+          "iou": 0.9677524429967427
+        },
+        "eval_duration_seconds": 0.09980583190917969
+      },
+      "per_tile": {
+        "Mekong_012": {
+          "valid_pixels": 65024,
+          "TP": 774,
+          "FP": 27,
+          "FN": 1,
+          "TN": 64222,
+          "precision": 0.9662921348314607,
+          "recall": 0.9987096774193548,
+          "f1_dice": 0.982233502538071,
+          "iou": 0.9650872817955112
+        },
+        "Mekong_013": {
+          "valid_pixels": 65024,
+          "TP": 763,
+          "FP": 22,
+          "FN": 0,
+          "TN": 64239,
+          "precision": 0.9719745222929936,
+          "recall": 1.0,
+          "f1_dice": 0.9857881136950905,
+          "iou": 0.9719745222929936
+        },
+        "Mekong_014": {
+          "valid_pixels": 65024,
+          "TP": 754,
+          "FP": 21,
+          "FN": 1,
+          "TN": 64248,
+          "precision": 0.9729032258064516,
+          "recall": 0.9986754966887417,
+          "f1_dice": 0.9856209150326797,
+          "iou": 0.9716494845360825
+        },
+        "Mekong_015": {
+          "valid_pixels": 65024,
+          "TP": 680,
+          "FP": 26,
+          "FN": 1,
+          "TN": 64317,
+          "precision": 0.9631728045325779,
+          "recall": 0.9985315712187959,
+          "f1_dice": 0.980533525594809,
+          "iou": 0.9618104667609618
+        }
+      }
+    },
+    "stacking": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2974,
+          "FP": 9,
+          "FN": 0,
+          "TN": 257113
+        },
+        "water_metrics": {
+          "precision": 0.9969829031176668,
+          "recall": 1.0,
+          "f1_dice": 0.9984891724022158,
+          "iou": 0.9969829031176668
+        },
+        "eval_duration_seconds": 0.31343865394592285
+      },
+      "per_tile": {
+        "Mekong_012": {
+          "valid_pixels": 65024,
+          "TP": 775,
+          "FP": 2,
+          "FN": 0,
+          "TN": 64247,
+          "precision": 0.9974259974259975,
+          "recall": 1.0,
+          "f1_dice": 0.9987113402061856,
+          "iou": 0.9974259974259975
+        },
+        "Mekong_013": {
+          "valid_pixels": 65024,
+          "TP": 763,
+          "FP": 3,
+          "FN": 0,
+          "TN": 64258,
+          "precision": 0.9960835509138382,
+          "recall": 1.0,
+          "f1_dice": 0.9980379332897319,
+          "iou": 0.9960835509138382
+        },
+        "Mekong_014": {
+          "valid_pixels": 65024,
+          "TP": 755,
+          "FP": 2,
+          "FN": 0,
+          "TN": 64267,
+          "precision": 0.9973579920739762,
+          "recall": 1.0,
+          "f1_dice": 0.9986772486772486,
+          "iou": 0.9973579920739762
+        },
+        "Mekong_015": {
+          "valid_pixels": 65024,
+          "TP": 681,
+          "FP": 2,
+          "FN": 0,
+          "TN": 64341,
+          "precision": 0.9970717423133236,
+          "recall": 1.0,
+          "f1_dice": 0.998533724340176,
+          "iou": 0.9970717423133236
+        }
+      }
+    },
+    "unet": {
+      "overall": {
+        "total_valid_pixels": 260096,
+        "confusion_matrix": {
+          "TP": 2812,
+          "FP": 314,
+          "FN": 162,
+          "TN": 256808
+        },
+        "water_metrics": {
+          "precision": 0.8995521433141395,
+          "recall": 0.9455279085406859,
+          "f1_dice": 0.921967213114754,
+          "iou": 0.8552311435523114
+        },
+        "eval_duration_seconds": 0.06638455390930176
+      },
+      "per_tile": {
+        "Mekong_012": {
+          "valid_pixels": 65024,
+          "TP": 740,
+          "FP": 100,
+          "FN": 35,
+          "TN": 64149,
+          "precision": 0.8809523809523809,
+          "recall": 0.9548387096774194,
+          "f1_dice": 0.9164086687306502,
+          "iou": 0.8457142857142858
+        },
+        "Mekong_013": {
+          "valid_pixels": 65024,
+          "TP": 727,
+          "FP": 63,
+          "FN": 36,
+          "TN": 64198,
+          "precision": 0.920253164556962,
+          "recall": 0.9528178243774574,
+          "f1_dice": 0.9362524146812621,
+          "iou": 0.8801452784503632
+        },
+        "Mekong_014": {
+          "valid_pixels": 65024,
+          "TP": 706,
+          "FP": 80,
+          "FN": 49,
+          "TN": 64189,
+          "precision": 0.8982188295165394,
+          "recall": 0.9350993377483444,
+          "f1_dice": 0.9162881245944191,
+          "iou": 0.8455089820359282
+        },
+        "Mekong_015": {
+          "valid_pixels": 65024,
+          "TP": 639,
+          "FP": 71,
+          "FN": 42,
+          "TN": 64272,
+          "precision": 0.9,
+          "recall": 0.9383259911894273,
+          "f1_dice": 0.9187634795111431,
+          "iou": 0.8497340425531915
+        }
+      }
+    }
+  }
+}

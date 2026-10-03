@@ -1,0 +1,187 @@
+{
+  "config": {
+    "n_estimators": 100,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "scale_pos_weight": 1.0,
+    "random_state": 42,
+    "tree_method": "hist",
+    "device": "cpu",
+    "n_jobs": -1,
+    "eval_metric": "logloss",
+    "samples_per_tile_water": 1000,
+    "samples_per_tile_nonwater": 2000,
+    "max_total_train_samples": 150000,
+    "feature_names": [
+      "VV_dB",
+      "VH_dB",
+      "VV_VH_ratio"
+    ],
+    "nodata_value": 255,
+    "train_manifest_path": "data/ml/train_manifest.json",
+    "val_manifest_path": "data/ml/val_manifest.json",
+    "test_manifest_path": "data/ml/test_manifest.json",
+    "experiment_dir": "experiments/xgboost_baseline",
+    "model_save_name": "xgb_baseline_model.json",
+    "metrics_save_name": "val_metrics.json",
+    "disclaimer": "SARA XGBoost Baseline model. Trained solely on train_manifest.json. Evaluated on Somalia validation tiles only. Mekong test set and EMSR927 validation assets are strictly isolated and not touched."
+  },
+  "data_summary": {
+    "num_tiles_processed": 36,
+    "total_train_samples": 99176,
+    "water_samples": 27176,
+    "nonwater_samples": 72000,
+    "water_sample_pct": 27.40179075582802
+  },
+  "fit_stats": {
+    "train_duration_seconds": 0.912,
+    "memory_before_mb": 0.0,
+    "memory_after_mb": 0.0,
+    "memory_delta_mb": 0.0,
+    "feature_importances_default_gain": {
+      "VV_dB": 0.5916838645935059,
+      "VH_dB": 0.3313714265823364,
+      "VV_VH_ratio": 0.0769447386264801
+    },
+    "feature_importances_gain": {
+      "VV_dB": 676.6915893554688,
+      "VH_dB": 378.9798583984375,
+      "VV_VH_ratio": 87.99945831298828
+    },
+    "feature_importances_weight": {
+      "VV_dB": 358.0,
+      "VH_dB": 532.0,
+      "VV_VH_ratio": 515.0
+    },
+    "feature_importances_cover": {
+      "VV_dB": 763.9212036132812,
+      "VH_dB": 353.6893310546875,
+      "VV_VH_ratio": 360.7398986816406
+    }
+  },
+  "overall_metrics": {
+    "total_valid_pixels": 260096,
+    "confusion_matrix": {
+      "TN": 257007,
+      "FP": 88,
+      "FN": 4,
+      "TP": 2997
+    },
+    "water_metrics": {
+      "precision": 0.971475,
+      "recall": 0.998667,
+      "f1_dice": 0.984883,
+      "iou": 0.970217,
+      "support": 3001
+    },
+    "nonwater_metrics": {
+      "precision": 0.999984,
+      "recall": 0.999658,
+      "f1_dice": 0.999821,
+      "iou": 0.999642,
+      "support": 257095
+    },
+    "predicted_water_pixels": 3085
+  },
+  "per_tile_metrics": {
+    "Somalia_028": {
+      "total_valid_pixels": 65024,
+      "confusion_matrix": {
+        "TN": 64222,
+        "FP": 28,
+        "FN": 0,
+        "TP": 774
+      },
+      "water_metrics": {
+        "precision": 0.965087,
+        "recall": 1.0,
+        "f1_dice": 0.982234,
+        "iou": 0.965087,
+        "support": 774
+      },
+      "nonwater_metrics": {
+        "precision": 1.0,
+        "recall": 0.999564,
+        "f1_dice": 0.999782,
+        "iou": 0.999564,
+        "support": 64250
+      },
+      "predicted_water_pixels": 802
+    },
+    "Somalia_029": {
+      "total_valid_pixels": 65024,
+      "confusion_matrix": {
+        "TN": 64228,
+        "FP": 22,
+        "FN": 1,
+        "TP": 773
+      },
+      "water_metrics": {
+        "precision": 0.972327,
+        "recall": 0.998708,
+        "f1_dice": 0.985341,
+        "iou": 0.971106,
+        "support": 774
+      },
+      "nonwater_metrics": {
+        "precision": 0.999984,
+        "recall": 0.999658,
+        "f1_dice": 0.999821,
+        "iou": 0.999642,
+        "support": 64250
+      },
+      "predicted_water_pixels": 795
+    },
+    "Somalia_030": {
+      "total_valid_pixels": 65024,
+      "confusion_matrix": {
+        "TN": 64297,
+        "FP": 15,
+        "FN": 3,
+        "TP": 709
+      },
+      "water_metrics": {
+        "precision": 0.979282,
+        "recall": 0.995787,
+        "f1_dice": 0.987465,
+        "iou": 0.975241,
+        "support": 712
+      },
+      "nonwater_metrics": {
+        "precision": 0.999953,
+        "recall": 0.999767,
+        "f1_dice": 0.99986,
+        "iou": 0.99972,
+        "support": 64312
+      },
+      "predicted_water_pixels": 724
+    },
+    "Somalia_031": {
+      "total_valid_pixels": 65024,
+      "confusion_matrix": {
+        "TN": 64260,
+        "FP": 23,
+        "FN": 0,
+        "TP": 741
+      },
+      "water_metrics": {
+        "precision": 0.969895,
+        "recall": 1.0,
+        "f1_dice": 0.984718,
+        "iou": 0.969895,
+        "support": 741
+      },
+      "nonwater_metrics": {
+        "precision": 1.0,
+        "recall": 0.999642,
+        "f1_dice": 0.999821,
+        "iou": 0.999642,
+        "support": 64283
+      },
+      "predicted_water_pixels": 764
+    }
+  },
+  "timestamp": "2026-10-03 13:14:05"
+}

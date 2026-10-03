@@ -1,0 +1,169 @@
+{
+  "config": {
+    "in_channels": 3,
+    "out_channels": 1,
+    "embedding_dim": 256,
+    "input_size": 256,
+    "nodata_value": 255,
+    "channel_means": [
+      -11.0,
+      -18.0,
+      7.0
+    ],
+    "channel_stds": [
+      3.0,
+      3.5,
+      2.5
+    ],
+    "batch_size": 2,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": 0.001,
+    "warmup_epochs": 3,
+    "weight_decay": 0.0001,
+    "pos_weight": 3.0,
+    "bce_weight": 0.5,
+    "max_epochs": 30,
+    "early_stopping_patience": 8,
+    "checkpoint_metric": "val_iou",
+    "use_mixed_precision": true,
+    "fixed_seed": 42,
+    "train_manifest_path": "data/ml/train_manifest.json",
+    "val_manifest_path": "data/ml/val_manifest.json",
+    "test_manifest_path": "data/ml/test_manifest.json",
+    "experiment_dir": "experiments/segformer_retrain",
+    "best_model_name": "best_model.pt",
+    "metrics_name": "retraining_metrics.json",
+    "history_csv_name": "training_history.csv",
+    "config_json_name": "config.json",
+    "disclaimer": "SARA Controlled SegFormer-B0 Retraining. Fitted on train_manifest.json with Linear Warmup + Cosine Decay and pos_weight=3.0. Validated on Somalia partition. Mekong test set and EMSR927 remain strictly isolated."
+  },
+  "baseline_reproduced": {
+    "precision": 0.02944915254174896,
+    "recall": 0.046317894033778145,
+    "f1_dice": 0.03600569874321972,
+    "iou": 0.018332893695353035
+  },
+  "train_summary": {
+    "num_parameters": 3714401,
+    "completed_epochs": 30,
+    "best_epoch": 29,
+    "best_val_iou": 0.015906,
+    "total_train_duration_sec": 35.94,
+    "peak_vram_allocated_gb": 0.226
+  },
+  "overall_metrics": {
+    "total_valid_pixels": 260096,
+    "confusion_matrix": {
+      "TN": 240795,
+      "FP": 16300,
+      "FN": 2694,
+      "TP": 307
+    },
+    "water_metrics": {
+      "precision": 0.01848618052617278,
+      "recall": 0.1022992335853949,
+      "f1_dice": 0.03131374948984438,
+      "iou": 0.015905911610714956
+    },
+    "predicted_water_pixels": 16607,
+    "eval_duration_seconds": 0.1054
+  },
+  "per_tile_metrics": {
+    "Somalia_028": {
+      "valid_pixels": 65024,
+      "TP": 99,
+      "FP": 4907,
+      "FN": 675,
+      "TN": 59343,
+      "precision": 0.019776268477826608,
+      "recall": 0.12790697674418605,
+      "f1_dice": 0.034256055363321804,
+      "iou": 0.0174265094173561
+    },
+    "Somalia_029": {
+      "valid_pixels": 65024,
+      "TP": 61,
+      "FP": 3217,
+      "FN": 713,
+      "TN": 61033,
+      "precision": 0.018608907870652835,
+      "recall": 0.07881136950904392,
+      "f1_dice": 0.03010858835143139,
+      "iou": 0.015284389877223753
+    },
+    "Somalia_030": {
+      "valid_pixels": 65024,
+      "TP": 69,
+      "FP": 3920,
+      "FN": 643,
+      "TN": 60392,
+      "precision": 0.017297568312860365,
+      "recall": 0.09691011235955056,
+      "f1_dice": 0.029355456285896617,
+      "iou": 0.014896373056994818
+    },
+    "Somalia_031": {
+      "valid_pixels": 65024,
+      "TP": 78,
+      "FP": 4256,
+      "FN": 663,
+      "TN": 60027,
+      "precision": 0.01799723119520074,
+      "recall": 0.10526315789473684,
+      "f1_dice": 0.03073891625615764,
+      "iou": 0.015609365619371623
+    }
+  },
+  "fair_comparison": {
+    "original_segformer": {
+      "parameters": 3714401,
+      "checkpoint_size_mb": 44.62,
+      "confusion_matrix": {
+        "TN": 252514,
+        "FP": 4581,
+        "FN": 2862,
+        "TP": 139
+      },
+      "water_metrics": {
+        "precision": 0.02944915254174896,
+        "recall": 0.046317894033778145,
+        "f1_dice": 0.03600569874321972,
+        "iou": 0.018332893695353035
+      }
+    },
+    "retrained_segformer": {
+      "parameters": 3714401,
+      "checkpoint_size_mb": 44.62,
+      "confusion_matrix": {
+        "TN": 240795,
+        "FP": 16300,
+        "FN": 2694,
+        "TP": 307
+      },
+      "water_metrics": {
+        "precision": 0.01848618052617278,
+        "recall": 0.1022992335853949,
+        "f1_dice": 0.03131374948984438,
+        "iou": 0.015905911610714956
+      }
+    },
+    "small_unet": {
+      "parameters": 1927009,
+      "checkpoint_size_mb": 23.21,
+      "confusion_matrix": {
+        "TN": 256835,
+        "FP": 260,
+        "FN": 163,
+        "TP": 2838
+      },
+      "water_metrics": {
+        "precision": 0.916075,
+        "recall": 0.945685,
+        "f1_dice": 0.930644,
+        "iou": 0.870285,
+        "support": 3001
+      }
+    }
+  },
+  "timestamp": "2026-10-03 14:10:20"
+}

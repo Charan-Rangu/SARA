@@ -1,0 +1,55 @@
+{
+  "event_ids": [
+    "Mekong"
+  ],
+  "tiles": [
+    {
+      "tile_id": "Mekong_012",
+      "event_id": "Mekong",
+      "sar_path": "data/ml/sen1floods11/images/Mekong_000_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Mekong_000_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 775,
+      "non_water_pixels": 64249
+    },
+    {
+      "tile_id": "Mekong_013",
+      "event_id": "Mekong",
+      "sar_path": "data/ml/sen1floods11/images/Mekong_001_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Mekong_001_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 763,
+      "non_water_pixels": 64261
+    },
+    {
+      "tile_id": "Mekong_014",
+      "event_id": "Mekong",
+      "sar_path": "data/ml/sen1floods11/images/Mekong_002_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Mekong_002_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 755,
+      "non_water_pixels": 64269
+    },
+    {
+      "tile_id": "Mekong_015",
+      "event_id": "Mekong",
+      "sar_path": "data/ml/sen1floods11/images/Mekong_003_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Mekong_003_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 681,
+      "non_water_pixels": 64343
+    }
+  ]
+}

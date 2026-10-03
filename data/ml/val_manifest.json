@@ -1,0 +1,55 @@
+{
+  "event_ids": [
+    "Somalia"
+  ],
+  "tiles": [
+    {
+      "tile_id": "Somalia_028",
+      "event_id": "Somalia",
+      "sar_path": "data/ml/sen1floods11/images/Somalia_000_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Somalia_000_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 774,
+      "non_water_pixels": 64250
+    },
+    {
+      "tile_id": "Somalia_029",
+      "event_id": "Somalia",
+      "sar_path": "data/ml/sen1floods11/images/Somalia_001_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Somalia_001_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 774,
+      "non_water_pixels": 64250
+    },
+    {
+      "tile_id": "Somalia_030",
+      "event_id": "Somalia",
+      "sar_path": "data/ml/sen1floods11/images/Somalia_002_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Somalia_002_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 712,
+      "non_water_pixels": 64312
+    },
+    {
+      "tile_id": "Somalia_031",
+      "event_id": "Somalia",
+      "sar_path": "data/ml/sen1floods11/images/Somalia_003_sar.tif",
+      "label_path": "data/ml/sen1floods11/labels/Somalia_003_label.tif",
+      "width": 256,
+      "height": 256,
+      "num_channels": 3,
+      "valid_pixels": 65024,
+      "water_pixels": 741,
+      "non_water_pixels": 64283
+    }
+  ]
+}

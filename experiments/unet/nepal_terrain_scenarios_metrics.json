@@ -1,0 +1,136 @@
+{
+  "timestamp": "2026-10-03 16:53:39",
+  "input_alignment_audit": {
+    "Prediction Mask": {
+      "shape": [
+        21519,
+        32072
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        83.92583581969234,
+        27.591277113250623,
+        86.80691259892046,
+        29.524361773147422
+      ],
+      "res": [
+        8.983152841195215e-05,
+        8.983152841195215e-05
+      ],
+      "nodata": 255.0,
+      "count": 1
+    },
+    "Probability Map": {
+      "shape": [
+        21519,
+        32072
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        83.92583581969234,
+        27.591277113250623,
+        86.80691259892046,
+        29.524361773147422
+      ],
+      "res": [
+        8.983152841195215e-05,
+        8.983152841195215e-05
+      ],
+      "nodata": -1.0,
+      "count": 1
+    },
+    "SAR Input (3-band)": {
+      "shape": [
+        21519,
+        32072
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        83.92583581969234,
+        27.591277113250623,
+        86.80691259892046,
+        29.524361773147422
+      ],
+      "res": [
+        8.983152841195215e-05,
+        8.983152841195215e-05
+      ],
+      "nodata": 255.0,
+      "count": 3
+    },
+    "Copernicus Slope (30m)": {
+      "shape": [
+        10800,
+        14400
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        82.99986111111112,
+        27.000138888888888,
+        86.99986111111112,
+        30.000138888888888
+      ],
+      "res": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "nodata": -9999.0,
+      "count": 1
+    },
+    "Copernicus DEM (30m)": {
+      "shape": [
+        10800,
+        14400
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        82.99986111111112,
+        27.000138888888888,
+        86.99986111111112,
+        30.000138888888888
+      ],
+      "res": [
+        0.0002777777777777778,
+        0.0002777777777777778
+      ],
+      "nodata": null,
+      "count": 1
+    }
+  },
+  "baseline_summary": {
+    "total_scene_pixels": 690157368,
+    "total_valid_pixels": 379266320,
+    "baseline_predicted_water_pixels": 32309359,
+    "baseline_water_percentage_of_valid": 8.5189
+  },
+  "diagnostic_scenarios": {
+    "5deg": {
+      "scenario_name": "Candidate A (Slope <= 5 deg)",
+      "slope_threshold_degrees": 5.0,
+      "retained_water_pixels": 7220402,
+      "excluded_water_pixels": 25088957,
+      "percentage_of_baseline_water_excluded": 77.6523,
+      "percentage_of_valid_pixels_affected": 6.6151,
+      "filtered_water_percentage_of_valid_pixels": 1.9038
+    },
+    "10deg": {
+      "scenario_name": "Candidate B (Slope <= 10 deg)",
+      "slope_threshold_degrees": 10.0,
+      "retained_water_pixels": 9895805,
+      "excluded_water_pixels": 22413554,
+      "percentage_of_baseline_water_excluded": 69.3717,
+      "percentage_of_valid_pixels_affected": 5.9097,
+      "filtered_water_percentage_of_valid_pixels": 2.6092
+    },
+    "15deg": {
+      "scenario_name": "Candidate C (Slope <= 15 deg)",
+      "slope_threshold_degrees": 15.0,
+      "retained_water_pixels": 12149495,
+      "excluded_water_pixels": 20159864,
+      "percentage_of_baseline_water_excluded": 62.3964,
+      "percentage_of_valid_pixels_affected": 5.3155,
+      "filtered_water_percentage_of_valid_pixels": 3.2034
+    }
+  },
+  "runtime_seconds": 26.99
+}
